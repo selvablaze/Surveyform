@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1>Good Vibes Form</h1>
+        <div class = "form">
+            <form action = example.com method = "post">
+                <p>Tell us something positive that happened to you today</p>
+                <label for="name" id="name">Name
+                    <input type="text" name="name" value="Enter your name">
+                </label><br>
+                <label for="email" id="email">Email
+                    <input type="email" name="email" value="Enter your email address">
+                </label><br>
+                <label for="number" id="number">On a scale of 1-10, how good was it?
+                    <input type="number" min="1" max="10" value="Enter a number between 1 and 10"> 
+                </label><br>
+                <label for = "place">Where did it happen?
+                <select name="place" id="place">
+                    <option value="home">At home</option>
+                    <option value="commute">On my commute</option>
+                    <option value="work">At work</option>
+                    <option value="street">On the street</option>
+                    <option value="other">Other</option>
+                </select>
+                </label><br>
+                <label>At what time of day did it happen?
+                <input type="radio" id="morning" name="timeofday" value="morning">
+                <label for="morning">Morning</label><br>
+                <input type="radio" id="afternoon" name="timeofday" value="afternoon">
+                <label for="afternoon">Afternoon</label><br>
+                <input type="radio" id="evening" name="timeofday" value="evening">
+                <label for="evening">Evening</label><br>
+                </label>
+                <label>What emotiond did you experience?(Select all that apply)
+                <input type="checkbox" id="emotion" name="excited" value="excited">
+                <label for="excited">Excited</label><br>
+                <input type="checkbox" id="emotion" name="humbled" value="humbled">
+                <label for="humbled">Humbled</label><br>
+                <input type="checkbox" id="elated" name="elated" value="elated">
+                <label for="elated">Elated</label><br>
+                <input type="checkbox" id="loved" name="loved" value="loved">
+                <label for="loved">Loved</label><br>
+                <input type="checkbox" id="enthusiastic" name="enthusiatic" value="enthusiastic">
+                <label for="enthusiatic">Enthusiastic</label>
+                </label><br>
+                <label for="experience">Please describe your positive experience
+                    <textarea id="experience" name="experience" rows="3">Enter your experience here...</textarea>
+                </label><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
