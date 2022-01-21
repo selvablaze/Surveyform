@@ -2,12 +2,14 @@
 <html>
     <head>
         <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css"  href="style.css">
     </head>
     <body>
         <h1>Good Vibes Form</h1>
+        
         <div class = "form">
             <form action = example.com method = "post">
-                <p>Tell us something positive that happened to you today</p>
+                <p style="font-size: 20px;">Tell us something positive that happened to you today</p>
                 <label for="name" id="name">Name
                     <input type="text" name="name" value="Enter your name">
                 </label><br>
@@ -26,7 +28,7 @@
                     <option value="other">Other</option>
                 </select>
                 </label><br>
-                <label>At what time of day did it happen?
+                <label id="radio">At what time of day did it happen?
                 <input type="radio" id="morning" name="timeofday" value="morning">
                 <label for="morning">Morning</label><br>
                 <input type="radio" id="afternoon" name="timeofday" value="afternoon">
@@ -34,7 +36,7 @@
                 <input type="radio" id="evening" name="timeofday" value="evening">
                 <label for="evening">Evening</label><br>
                 </label>
-                <label>What emotiond did you experience?(Select all that apply)
+                <label id="checkbox">What emotions did you experience?(Select all that apply)
                 <input type="checkbox" id="emotion" name="excited" value="excited">
                 <label for="excited">Excited</label><br>
                 <input type="checkbox" id="emotion" name="humbled" value="humbled">
